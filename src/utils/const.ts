@@ -1,1 +1,1 @@
-export const BASE_URL = `https://miishca.github.io/nice_gadgets_store`;
+export const BASE_URL = `https://miishca.github.io/react_store`;

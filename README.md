@@ -39,7 +39,7 @@ The Nice Gadgets Store is an e-commerce platform built using modern web technolo
 To run the project locally, follow these steps:
 
 1. **Clone the repository:**
-   git clone https://github.com/Miishca/nice_gadgets_store.git
+   git clone https://github.com/Miishca/react_store.git
 2. **Navigate to the project directory:**
    cd nice_gadgets_store
 3. **Install dependencies:**
@@ -68,5 +68,5 @@ This project is licensed under the MIT License.
 
 ## Links
 
-- **GitHub Repository**: [https://github.com/Miishca/nice_gadgets_store](https://github.com/Miishca/nice_gadgets_store)
-- **Live Demo**: [https://miishca.github.io/nice_gadgets_store/#/](https://miishca.github.io/nice_gadgets_store/#/)
+- **GitHub Repository**: [https://github.com/Miishca/react_store](https://github.com/Miishca/react_store)
+- **Live Demo**: [https://miishca.github.io/react_store/#/](https://miishca.github.io/react_store/#/)
