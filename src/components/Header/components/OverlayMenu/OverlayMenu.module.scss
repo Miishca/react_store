@@ -1,25 +1,31 @@
 @import '../../../../styles/main';
 
 .menuOverlay {
-  display: none;
+  visibility: hidden;
   position: fixed;
   top: 72px;
   left: 0;
   right: 0;
-  height: 100vh;
+  height: calc(100vh - 72px);
   z-index: 1;
-
+  padding-bottom: 64px;
   background-color: var(--color-background);
   opacity: 0;
   transform: translateY(-100%);
-  transition: opacity 0.3s ease, transform 0.3s ease; 
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s ease 0.3s;
 }
 
 .show {
-  display: flex;
+  visibility: visible;
   justify-content: center;
   opacity: 1;
   transform: translateY(0);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .nav {
@@ -50,7 +56,9 @@
   align-items: center;
   justify-content: center;
   color: var(--color-secondary);
-  box-shadow: 0 -1px 0 0 var(--color-elements), 1px 0 0 0 var(--color-elements);
+  box-shadow:
+    0 -1px 0 0 var(--color-elements),
+    1px 0 0 0 var(--color-elements);
 }
 
 .actionIcon {
@@ -74,11 +82,10 @@
   border-radius: 50%;
   border: 1px solid var(--color-background);
   background-color: var(--color-red);
-
 }
 
 .countText {
-  color: #F1F2F9;
+  color: #f1f2f9;
   font-size: 9px;
   font-weight: 700;
   line-height: 11.5px;
@@ -99,7 +106,7 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: 0;
     left: 0;
     right: 0;
