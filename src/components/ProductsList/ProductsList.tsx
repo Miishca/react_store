@@ -77,10 +77,15 @@ export const ProductsList: React.FC<ProductsListProps> = ({
 
   const handlePageChange = useCallback(
     (newPage: number) => {
-      setSearchParams({ page: String(newPage), perPage, sort: sortType });
+      setSearchParams({
+        page: String(newPage),
+        perPage,
+        sort: sortType,
+        query: searchQuery,
+      });
       setTimeout(scrollToTop, 0);
     },
-    [setSearchParams, perPage, sortType],
+    [setSearchParams, perPage, sortType, searchQuery],
   );
 
   const startIndex = (page - 1) * actualPerPage;
